@@ -1,12 +1,15 @@
-function find(array){
+const texto = "El carro es verde y bonito. A mi madre le gusta mucho su color";
+const palabrasClave = ["carro", "verde", "bonito", "madre", "color"];
+
+function findWords(texto){
     let arreglo = [];
-    for(let i = 0; i < array.length; i++){
-        const dato = typeof array[i];
+    for(let i = 0; i < texto.length; i++){
+        const dato = typeof texto[i];
         if(dato === "string"){
-            arreglo.push(array[i]);
+            arreglo.push(texto[i]);
         }
     }
     return arreglo;
 }
-const lista = [20, 30, true, "hola", [ 6, 8], false, "edad", "dragon"];
-console.log(find(lista))
+console.log (texto);
+console.log(findWords(palabrasClave));
