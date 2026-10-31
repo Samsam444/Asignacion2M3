@@ -11,10 +11,9 @@ function sortNumbers(numeros){
                 cambiarPuesto = true
             }    
         }
-        num--;
-    } while(cambiarPuesto)
+    } while(cambiarPuesto);
         return numeros;
 }
 
-const listaNumeros = [30, 25, 13, 16, 2, 1.45, 33, 24, 18, 5, 9, 21, 45];
-console.log(sortNumbers(listaNumeros))
+const listaNumeros = [30, 25, 0.9, 13, 16, 2, 1.45, 33, 29.22, 24, 18, 5, 9, 21, 45, 12, 38, 4.4];
+console.log(sortNumbers(listaNumeros));
